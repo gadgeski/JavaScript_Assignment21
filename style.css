@@ -1,0 +1,110 @@
+/* CSS変数を定義 - Root要素（HTML）に設定するとグローバルにアクセスできる */
+:root {
+  --main-theme-color: #007bff; /* デフォルトのテーマカラー */
+  --accent-color: #ffc107; /* アクセントカラー（例として） */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff;
+  color: #343a40;
+}
+
+h1 {
+  color: var(--main-theme-color); /* CSS変数を使用 */
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.color-buttons {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 15px; /* ボタン間の隙間 */
+}
+
+.theme-btn {
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 各ボタンに直接色を設定 */
+#defaultTheme {
+  background-color: #007bff;
+}
+#greenTheme {
+  background-color: #28a745;
+}
+#purpleTheme {
+  background-color: #6f42c1;
+}
+#orangeTheme {
+  background-color: #fd7e14;
+}
+
+.content-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.content-box h2 {
+  color: var(--main-theme-color); /* CSS変数を使用 */
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.content-box p {
+  font-size: 1.1em;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.action-button {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: var(--main-theme-color); /* CSS変数を使用 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.action-button:hover {
+  filter: brightness(90%); /* 少し暗くする */
+}
+
+.highlight-box {
+  background-color: var(--main-theme-color); /* CSS変数を使用 */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}

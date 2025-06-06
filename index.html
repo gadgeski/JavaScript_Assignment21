@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>-CSS変数操作-</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>色々テーマカラーが変わるヤツ</h1>
+
+    <div class="color-buttons">
+      <button id="defaultTheme" class="theme-btn" data-color="#007bff">
+        デフォルト
+      </button>
+      <button id="greenTheme" class="theme-btn" data-color="#28a745">
+        グリーン
+      </button>
+      <button id="purpleTheme" class="theme-btn" data-color="#6f42c1">
+        パープル
+      </button>
+      <button id="orangeTheme" class="theme-btn" data-color="#fd7e14">
+        オレンジ
+      </button>
+    </div>
+
+    <div class="content-box">
+      <h2>これはタイトルです</h2>
+      <p>
+        この段落のテキストは、選択したテーマカラーに合わせて色が変わります。
+      </p>
+      <button class="action-button">アクション</button>
+      <div class="highlight-box">ハイライトされる部分</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
