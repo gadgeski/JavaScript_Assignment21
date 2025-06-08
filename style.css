@@ -21,7 +21,11 @@ h1 {
   margin-bottom: 40px;
   font-weight: 600;
 }
+/*======================================================
 
+Button
+
+======================================================*/
 .color-buttons {
   margin-bottom: 50px;
   display: flex;
@@ -43,7 +47,11 @@ h1 {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+/*======================================================
 
+ColorSelect
+
+======================================================*/
 /* 各ボタンに直接色を設定 */
 #defaultTheme {
   background-color: #007bff;
