@@ -36,7 +36,9 @@ HTML、CSS、JavaScript の 3 つのファイルが連携して動作します�
 
 - テーマカラーが適用されるコンテンツの例です。
 
-- <h2>（「色が変わります」）、<p>（説明文）、<button class="action-button">（アクションボタン）、<div class="highlight-box">（ハイライトされる部分）が含まれています。これらの要素の色は、選択したテーマカラーに合わせて変わります。
+<h3>- h2（「色が変わります」）、p（説明文）、button class="action-button"（アクションボタン）、div class="highlight-box"（ハイライトされる部分）が含まれています。</h3>
+
+これらの要素の色は、選択したテーマカラーに合わせて変わります。
 
 <h3>script src="script.js"</h3> script.jsファイルを読み込み、JavaScriptの機能（ボタンクリックで色を変える機能）を有効にします。
 
